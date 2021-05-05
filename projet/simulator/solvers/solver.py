@@ -25,7 +25,7 @@ class ISolver:
             Return the new state at time t.
         """
         #méthode d'Euler
-
+        
         raise NotImplementedError
 
 
