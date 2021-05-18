@@ -24,9 +24,19 @@ class ISolver:
             throughout the execution of the program.
             Return the new state at time t.
         """
-        #méthode d'Euler
+        # détermination des paramètres d'intégration nombre de pas 👎 et
+        # intervalle entre deux pas (h)
+        h = self.max_step_size
+        n=(t-self.t0)/h
+        # initialisation du vecteur de retour
+        y =self.y0
+        # calcul du vecteur de retour
+        for i in range(n):
+            y=y + self.f(y)*h
+        return y
         
-        raise NotImplementedError
+
+
 
 
 class DummySolver(ISolver):
