@@ -30,7 +30,8 @@ class IEngine:
         n = len(y0)/2
         der = [y0[i] for i in range(n+1,2*n+1)]
         mass = []
-        for i in range(1,n+1)
+        for i in range(1,n+1):
+            k=0
 
         raise NotImplementedError
 
